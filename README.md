@@ -1,6 +1,6 @@
 <div align="center">
   <h1>  G A B R I E L  _ V E L A Z Q U E Z </h1>
-  <p><i>"Exploring the universe through physics, code, and AI"</i></p>
+  <p><i>"When computing meets Physics"</i></p>
   
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Physics+Honors+Student;Infomatrix+Gold+Medalist;Computational+Physics;Quantum+Computing+%26+AI" alt="Typing SVG" />
@@ -43,5 +43,5 @@ My main focus spans **Computational Physics, AI, and Quantum Computing**. I also
 
 <br>
 <div align="center">
-  <p><i>"Simulating the cosmos" • <a href="mailto:angel.munguiavz@udlap.mx">angel.munguiavz@udlap.mx</a></i></p>
+  <p><i>"Lets get started" • <a href="mailto:angel.munguiavz@udlap.mx">angel.munguiavz@udlap.mx</a></i></p>
 </div>
