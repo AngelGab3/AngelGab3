@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>  ___G A B R I E L  _ V E L A Z Q U E Z___ </h1>
+  <h1>  G A B R I E L  _ V E L A Z Q U E Z </h1>
   <p><i>"Exploring the universe through physics, code, and AI"</i></p>
   
   <a href="https://git.io/typing-svg">
