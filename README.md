@@ -29,7 +29,7 @@
 | ![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white) | ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white) | ![Git](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white) |
 | ![PyTorch](https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) | ![Arduino](https://img.shields.io/badge/ARDUINO-00979D?style=for-the-badge&logo=arduino&logoColor=white) | ![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white) |
 | ![TensorFlow](https://img.shields.io/badge/TENSORFLOW-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) | ![Raspberry Pi](https://img.shields.io/badge/RASPBERRY_PI-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white) | ![LaTeX](https://img.shields.io/badge/LATEX-008080?style=for-the-badge&logo=latex&logoColor=white) |
-| ![Swift](https://img.shields.io/badge/SWIFT-FA7343?style=for-the-badge&logo=swift&logoColor=white) | ![Custom PCB Design](https://img.shields.io/badge/PCB_DESIGN-412991?style=for-the-badge&logo=kicad&logoColor=white) | ![Quarto](https://img.shields.io/badge/QUARTO-75AADB?style=for-the-badge&logo=quarto&logoColor=white) |
+| ![Custom PCB Design](https://img.shields.io/badge/PCB_DESIGN-412991?style=for-the-badge&logo=kicad&logoColor=white) | ![Quarto](https://img.shields.io/badge/QUARTO-75AADB?style=for-the-badge&logo=quarto&logoColor=white) |
 | ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black) | | |
 | ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white) | | |
 
