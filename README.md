@@ -18,7 +18,6 @@ Physics Honors student at **UDLAP** and AI/Robotics enthusiast from **Mexico**. 
 *   **Hackathons & Competitions:** 2x NASA Space Apps Challenge (Engineered predictive core for Air Quality & Exoplanet Mapping), Torneo Mexicano de Robótica (Lead of Electronics).
 *   **Lectures & Outreach:** Speaker at the Puebla Planetarium Dome ("Cosmic Shortcuts"), *Noche de las Estrellas* workshop designer (ML in Astrophysics), and UDLAP STEM Instructor (Quantum Computing).
 *   **Honors:** Full Academic Excellence STEM Scholarship (100% Tuition).
-*   **Portfolio:** [angelgab3.github.io](https://angelgab3.github.io)
 
 ---
 
