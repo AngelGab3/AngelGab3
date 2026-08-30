@@ -38,8 +38,7 @@ My main focus spans **Computational Physics, AI, and Quantum Computing**. I also
 
 ### Navigation
 
-*   **[My Portfolio](https://angelgab3.github.io):** Check out my research, computational physics projects, and AI developments.
-*   **[LinkedIn](https://linkedin.com/in/angel-munguiavz):** Connect with me professionally.
+*   **[LinkedIn](https://www.linkedin.com/in/%C3%A1ngel-gabriel-mungu%C3%ADa-vel%C3%A1zquez-53806930a/):** Connect with me professionally.
 
 <br>
 <div align="center">
