@@ -49,44 +49,14 @@
 
 ## Featured Research & Engineering
 
-<table align="center">
-  <tr>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/AngelGab3/Quantum-Computing">⚛️ Quantum-Computing</a></b><br/>
-      <sub><code>|ψ⟩ = cos(θ/2)|0⟩ + e^{iφ}sin(θ/2)|1⟩</code></sub><br/><br/>
-      Qiskit circuits, unitary operators, Bloch sphere simulations, and mathematical derivations linking complex Hilbert spaces to quantum algorithms (Deutsch–Jozsa, Grover, QFT).
-    </td>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/AngelGab3/Final_Project_Optics_Difractive_Neural_Networks">🔬 Diffractive Neural Networks (D²NN)</a></b><br/>
-      <sub><code>U(z) = ℱ⁻¹{ H_BL(u,v;z) · ℱ{U₀·e^{iΦ}} }</code></sub><br/><br/>
-      Visible-wavelength phase-only optical neural networks modeled via band-limited angular spectrum propagation, Fresnel scaling, and Wirtinger gradient backpropagation.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/AngelGab3/Geometry_and_Physics">📐 Geometry_and_Physics</a></b><br/>
-      <sub><code>ds² = g_ij(θ) dθⁱ dθʲ · d² = 0</code></sub><br/><br/>
-      Formal LaTeX notes bridging Euclidean vector calculus with Riemannian metric tensors, Cartan moving frames, physical topology, and symplectic mechanics on <i>T*Q</i>.
-    </td>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/AngelGab3/GalaxyAE">🌌 GalaxyAE</a> &amp; <a href="https://github.com/AngelGab3/MaNGA-DESOM">MaNGA-DESOM</a></b><br/>
-      <sub><code>z = f_θ(x) · DESOM Topology</code></sub><br/><br/>
-      Deep Embedded Self-Organizing Maps and Autoencoder pipelines for unsupervised spectroscopic galaxy clustering and topological manifold preservation.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/RoshTzsche/gota_poblana">💧 Gota Poblana</a></b><br/>
-      <sub><code>α_HOCl = 1 / (1 + 10^(pH − pKa(T)))</code></sub><br/><br/>
-      2nd Place at Hackatón Puebla 2026: offline adaptive pH dosing controller for free-chlorine efficacy using ESP32-S3 firmware, Flutter app, MQTT, and deterministic HIL simulation.
-    </td>
-    <td width="50%" valign="top">
-      <b><a href="https://github.com/AngelGab3/Summer-Lectures-2026.-Deep-Learning-A-Mathematical-Physics-Approach">📚 Summer Lectures 2026</a></b><br/>
-      <sub><code>∇_g L(θ) = G⁻¹(θ) ∇L(θ)</code></sub><br/><br/>
-      Course designed and taught from first principles connecting numerical analysis, Hilbert spaces, Hessians, and optimizer dynamics to modern deep learning in PyTorch.
-    </td>
-  </tr>
-</table>
+| Project | Mathematical Core | Focus |
+| :--- | :--- | :--- |
+| [⚛️ **Quantum-Computing**](https://github.com/AngelGab3/Quantum-Computing) | $\lvert\psi\rangle = \cos(\theta/2)\lvert 0\rangle + e^{i\phi}\sin(\theta/2)\lvert 1\rangle$ | Qiskit circuits, unitary gates, Bloch sphere simulation, and Hilbert-space derivations (Deutsch–Jozsa, Grover, QFT). |
+| [🔬 **Diffractive Neural Networks (D²NN)**](https://github.com/AngelGab3/Final_Project_Optics_Difractive_Neural_Networks) | $U(z) = \mathcal{F}^{-1}\{H_{\mathrm{BL}}\,\mathcal{F}\{U_0 e^{i\Phi}\}\}$ | Visible-wavelength phase-only optical neural networks via band-limited angular spectrum propagation & Wirtinger calculus. |
+| [📐 **Geometry_and_Physics**](https://github.com/AngelGab3/Geometry_and_Physics) | $ds^2 = g_{ij}(\theta)\,d\theta^i d\theta^j,\;\; d^2 = 0$ | Formal LaTeX notes connecting Riemannian metrics, Cartan moving frames, physical topology, and symplectic mechanics on $T^{\ast}Q$. |
+| [🌌 **GalaxyAE**](https://github.com/AngelGab3/GalaxyAE) & [MaNGA-DESOM](https://github.com/AngelGab3/MaNGA-DESOM) | $z = f_\theta(x) \;\cdot\; \mathrm{DESOM}$ | Deep Embedded Self-Organizing Maps and Autoencoder pipelines for unsupervised spectroscopic galaxy clustering. |
+| [💧 **Gota Poblana**](https://github.com/RoshTzsche/gota_poblana) | $\alpha_{\mathrm{HOCl}} = \left(1 + 10^{\mathrm{pH}-\mathrm{p}K_a(T)}\right)^{-1}$ | 2nd Place Hackatón Puebla 2026: offline adaptive pH dosing for free-chlorine efficacy with ESP32-S3, Flutter, MQTT, and HIL simulator. |
+| [📚 **Summer Lectures 2026**](https://github.com/AngelGab3/Summer-Lectures-2026.-Deep-Learning-A-Mathematical-Physics-Approach) | $\nabla_g \mathcal{L}(\theta) = G^{-1}(\theta)\nabla \mathcal{L}(\theta)$ | First-principles course linking numerical analysis, Hilbert spaces, and optimizer dynamics to deep learning in PyTorch. |
 
 ---
 

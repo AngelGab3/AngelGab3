@@ -28,10 +28,7 @@
   <style>
     .sans { font-family: 'Space Grotesk', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    @keyframes pulseDot {
-      0%, 100% { opacity: 0.75; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.35); }
-    }
+    .math { font-family: 'STIX Two Math', 'Cambria Math', 'Times New Roman', Georgia, serif; }
     @keyframes railFlow {
       0% { stroke-dashoffset: 620; }
       100% { stroke-dashoffset: 0; }
@@ -45,12 +42,8 @@
       50% { transform: rotate(22deg); }
     }
     @keyframes gateGlow {
-      0%, 100% { opacity: 0.75; }
+      0%, 100% { opacity: 0.78; }
       50% { opacity: 1; }
-    }
-    .dot-pulse {
-      transform-origin: 66px 48px;
-      animation: pulseDot 2.4s ease-in-out infinite;
     }
     .flow-0 {
       stroke-dasharray: 44 266;
@@ -65,11 +58,11 @@
       animation: railFlow 3.4s linear -2.2s infinite;
     }
     .orbit-ring {
-      transform-origin: 985px 165px;
+      transform-origin: 985px 162px;
       animation: orbitSpin 36s linear infinite;
     }
     .bloch-vec {
-      transform-origin: 985px 165px;
+      transform-origin: 985px 162px;
       animation: blochPrecess 5.8s ease-in-out infinite;
     }
     .gate-pulse {
@@ -84,151 +77,143 @@
     <rect x="0" y="0" width="1200" height="340" fill="url(#glowL-light)"/>
     <rect x="0" y="0" width="1200" height="340" fill="url(#glowR-light)"/>
 
-    <!-- Top status badge -->
-    <rect x="48" y="34" width="388" height="28" rx="14" fill="#ffffff" stroke="#c4b5fd" stroke-width="1"/>
-    <circle class="dot-pulse" cx="66" cy="48" r="4.2" fill="#0891b2"/>
-    <text x="80" y="52" class="mono" font-size="11.5" font-weight="600" fill="#334155" letter-spacing="0.4">LAB://COMPUTATIONAL_PHYSICS · UDLAP HONORS</text>
-
-    <!-- Main Hero Heading -->
-    <text x="48" y="102" class="sans" font-size="35" font-weight="700" fill="url(#accent-light)" letter-spacing="-0.6">Ángel Gabriel Munguía Velázquez</text>
-    <text x="48" y="132" class="sans" font-size="15.5" font-weight="500" fill="#334155">Computational Physics  ·  Quantum Computing  ·  Information Geometry  ·  Deep Learning</text>
+    <!-- Main Hero Heading (clean, no lab badge) -->
+    <text x="48" y="74" class="sans" font-size="36" font-weight="700" fill="url(#accent-light)" letter-spacing="-0.6">Ángel Gabriel Munguía Velázquez</text>
+    <text x="48" y="106" class="sans" font-size="15.5" font-weight="500" fill="#334155">Computational Physics  ·  Quantum Computing  ·  Information Geometry  ·  Deep Learning</text>
 
     <!-- 3-Qubit Quantum Circuit Panel -->
-    <rect x="48" y="156" width="690" height="142" rx="14" fill="#ffffff" fill-opacity="0.88" stroke="#ddd6fe" stroke-width="1"/>
+    <rect x="48" y="136" width="690" height="146" rx="14" fill="#ffffff" fill-opacity="0.88" stroke="#ddd6fe" stroke-width="1"/>
 
     <!-- Qubit labels -->
-    <text x="64" y="196" class="mono" font-size="12.5" font-weight="600" fill="#6d28d9">q₀ |0⟩</text>
-    <text x="64" y="233" class="mono" font-size="12.5" font-weight="600" fill="#6d28d9">q₁ |0⟩</text>
-    <text x="64" y="270" class="mono" font-size="12.5" font-weight="600" fill="#6d28d9">q₂ |0⟩</text>
+    <text x="64" y="178" class="mono" font-size="12.5" font-weight="600" fill="#6d28d9">q<tspan baseline-shift="sub" font-size="72%">0</tspan> |0⟩</text>
+    <text x="64" y="214" class="mono" font-size="12.5" font-weight="600" fill="#6d28d9">q<tspan baseline-shift="sub" font-size="72%">1</tspan> |0⟩</text>
+    <text x="64" y="250" class="mono" font-size="12.5" font-weight="600" fill="#6d28d9">q<tspan baseline-shift="sub" font-size="72%">2</tspan> |0⟩</text>
 
     <!-- Classical readout label -->
-    <text x="706" y="233" class="mono" font-size="12" font-weight="600" fill="#64748b">c₃</text>
+    <text x="706" y="214" class="mono" font-size="12" font-weight="600" fill="#64748b">c<tspan baseline-shift="sub" font-size="72%">3</tspan></text>
 
     <!-- Static horizontal qubit rails -->
-    <line x1="114" y1="192" x2="660" y2="192" stroke="#cbd5e1" stroke-width="1.6"/>
-    <line x1="114" y1="229" x2="660" y2="229" stroke="#cbd5e1" stroke-width="1.6"/>
-    <line x1="114" y1="266" x2="660" y2="266" stroke="#cbd5e1" stroke-width="1.6"/>
+    <line x1="118" y1="174" x2="660" y2="174" stroke="#cbd5e1" stroke-width="1.6"/>
+    <line x1="118" y1="210" x2="660" y2="210" stroke="#cbd5e1" stroke-width="1.6"/>
+    <line x1="118" y1="246" x2="660" y2="246" stroke="#cbd5e1" stroke-width="1.6"/>
 
     <!-- Classical double wire outputs -->
-    <line x1="660" y1="190" x2="696" y2="190" stroke="#cbd5e1" stroke-width="1.2"/>
-    <line x1="660" y1="194" x2="696" y2="194" stroke="#cbd5e1" stroke-width="1.2"/>
-    <line x1="660" y1="227" x2="696" y2="227" stroke="#cbd5e1" stroke-width="1.2"/>
-    <line x1="660" y1="231" x2="696" y2="231" stroke="#cbd5e1" stroke-width="1.2"/>
-    <line x1="660" y1="264" x2="696" y2="264" stroke="#cbd5e1" stroke-width="1.2"/>
-    <line x1="660" y1="268" x2="696" y2="268" stroke="#cbd5e1" stroke-width="1.2"/>
+    
+    <line x1="660" y1="172" x2="696" y2="172" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="660" y1="176" x2="696" y2="176" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="660" y1="208" x2="696" y2="208" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="660" y1="212" x2="696" y2="212" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="660" y1="244" x2="696" y2="244" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="660" y1="248" x2="696" y2="248" stroke="#cbd5e1" stroke-width="1.2"/>
 
     <!-- Animated quantum phase pulses along rails -->
-    <line class="flow-0" x1="114" y1="192" x2="660" y2="192" stroke="#0891b2" stroke-width="2.4" stroke-linecap="round"/>
-    <line class="flow-1" x1="114" y1="229" x2="660" y2="229" stroke="#6d28d9" stroke-width="2.4" stroke-linecap="round"/>
-    <line class="flow-2" x1="114" y1="266" x2="660" y2="266" stroke="#0891b2" stroke-width="2.4" stroke-linecap="round"/>
+    <line class="flow-0" x1="118" y1="174" x2="660" y2="174" stroke="#0891b2" stroke-width="2.4" stroke-linecap="round"/>
+    <line class="flow-1" x1="118" y1="210" x2="660" y2="210" stroke="#6d28d9" stroke-width="2.4" stroke-linecap="round"/>
+    <line class="flow-2" x1="118" y1="246" x2="660" y2="246" stroke="#0891b2" stroke-width="2.4" stroke-linecap="round"/>
 
     <!-- Column 1: H, Ry(θ), H -->
     <g class="gate-pulse">
-      <rect x="148" y="177" width="32" height="30" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
-      <text x="164" y="196" class="mono" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">H</text>
+      <rect x="148" y="159" width="32" height="30" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+      <text x="164" y="178" class="mono" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">H</text>
 
-      <rect x="138" y="214" width="52" height="30" rx="6" fill="#f5f3ff" stroke="#0891b2" stroke-width="1.4"/>
-      <text x="164" y="233" class="mono" font-size="11.5" font-weight="700" fill="#0f172a" text-anchor="middle">Ry(θ)</text>
+      <rect x="138" y="195" width="52" height="30" rx="6" fill="#f5f3ff" stroke="#0891b2" stroke-width="1.4"/>
+      <text x="164" y="214" class="mono" font-size="11.5" font-weight="700" fill="#0f172a" text-anchor="middle">R<tspan baseline-shift="sub" font-size="72%">y</tspan>(θ)</text>
 
-      <rect x="148" y="251" width="32" height="30" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
-      <text x="164" y="270" class="mono" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">H</text>
+      <rect x="148" y="231" width="32" height="30" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+      <text x="164" y="250" class="mono" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">H</text>
     </g>
 
     <!-- Column 2: CNOT q0 -> q1 -->
-    <line x1="252" y1="192" x2="252" y2="239" stroke="#0891b2" stroke-width="1.8"/>
-    <circle cx="252" cy="192" r="5" fill="#0891b2"/>
-    <circle cx="252" cy="229" r="10.5" fill="#f5f3ff" stroke="#0891b2" stroke-width="1.7"/>
-    <line x1="245" y1="229" x2="259" y2="229" stroke="#0891b2" stroke-width="1.6"/>
-    <line x1="252" y1="222" x2="252" y2="236" stroke="#0891b2" stroke-width="1.6"/>
+    <line x1="252" y1="174" x2="252" y2="220" stroke="#0891b2" stroke-width="1.8"/>
+    <circle cx="252" cy="174" r="5" fill="#0891b2"/>
+    <circle cx="252" cy="210" r="10.5" fill="#f5f3ff" stroke="#0891b2" stroke-width="1.7"/>
+    <line x1="245" y1="210" x2="259" y2="210" stroke="#0891b2" stroke-width="1.6"/>
+    <line x1="252" y1="203" x2="252" y2="217" stroke="#0891b2" stroke-width="1.6"/>
 
     <!-- Column 3: CNOT q1 -> q2 -->
-    <line x1="336" y1="229" x2="336" y2="276" stroke="#6d28d9" stroke-width="1.8"/>
-    <circle cx="336" cy="229" r="5" fill="#6d28d9"/>
-    <circle cx="336" cy="266" r="10.5" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.7"/>
-    <line x1="329" y1="266" x2="343" y2="266" stroke="#6d28d9" stroke-width="1.6"/>
-    <line x1="336" y1="259" x2="336" y2="273" stroke="#6d28d9" stroke-width="1.6"/>
+    <line x1="336" y1="210" x2="336" y2="256" stroke="#6d28d9" stroke-width="1.8"/>
+    <circle cx="336" cy="210" r="5" fill="#6d28d9"/>
+    <circle cx="336" cy="246" r="10.5" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.7"/>
+    <line x1="329" y1="246" x2="343" y2="246" stroke="#6d28d9" stroke-width="1.6"/>
+    <line x1="336" y1="239" x2="336" y2="253" stroke="#6d28d9" stroke-width="1.6"/>
 
     <!-- Column 4: Rz(φ), X, Ry(α) -->
-    <rect x="398" y="177" width="52" height="30" rx="6" fill="#f5f3ff" stroke="#0891b2" stroke-width="1.4"/>
-    <text x="424" y="196" class="mono" font-size="11.5" font-weight="700" fill="#0f172a" text-anchor="middle">Rz(φ)</text>
+    <rect x="398" y="159" width="52" height="30" rx="6" fill="#f5f3ff" stroke="#0891b2" stroke-width="1.4"/>
+    <text x="424" y="178" class="mono" font-size="11.5" font-weight="700" fill="#0f172a" text-anchor="middle">R<tspan baseline-shift="sub" font-size="72%">z</tspan>(φ)</text>
 
-    <rect x="408" y="214" width="32" height="30" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
-    <text x="424" y="233" class="mono" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">X</text>
+    <rect x="408" y="195" width="32" height="30" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+    <text x="424" y="214" class="mono" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">X</text>
 
-    <rect x="398" y="251" width="52" height="30" rx="6" fill="#f5f3ff" stroke="#0891b2" stroke-width="1.4"/>
-    <text x="424" y="270" class="mono" font-size="11.5" font-weight="700" fill="#0f172a" text-anchor="middle">Ry(α)</text>
+    <rect x="398" y="231" width="52" height="30" rx="6" fill="#f5f3ff" stroke="#0891b2" stroke-width="1.4"/>
+    <text x="424" y="250" class="mono" font-size="11.5" font-weight="700" fill="#0f172a" text-anchor="middle">R<tspan baseline-shift="sub" font-size="72%">y</tspan>(α)</text>
 
     <!-- Column 5: CZ q0 <-> q2 + H on q1 -->
-    <line x1="528" y1="192" x2="528" y2="266" stroke="#0891b2" stroke-width="1.6" stroke-dasharray="4 3"/>
-    <circle cx="528" cy="192" r="5" fill="#0891b2"/>
-    <circle cx="528" cy="266" r="5" fill="#0891b2"/>
-    <rect x="512" y="214" width="32" height="30" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
-    <text x="528" y="233" class="mono" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">H</text>
+    <line x1="528" y1="174" x2="528" y2="246" stroke="#0891b2" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <circle cx="528" cy="174" r="5" fill="#0891b2"/>
+    <circle cx="528" cy="246" r="5" fill="#0891b2"/>
+    <rect x="512" y="195" width="32" height="30" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.4"/>
+    <text x="528" y="214" class="mono" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">H</text>
 
     <!-- Column 6: Measurement meters -->
     
     <g>
-      <rect x="614" y="178" width="32" height="28" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.4"/>
-      <path d="M 621 198 A 9 9 0 0 1 639 198" fill="none" stroke="#0891b2" stroke-width="1.4"/>
-      <line x1="630" y1="198" x2="637" y2="187" stroke="#6d28d9" stroke-width="1.6" stroke-linecap="round"/>
-      <circle cx="630" cy="198" r="1.6" fill="#0f172a"/>
+      <rect x="614" y="160" width="32" height="28" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.4"/>
+      <path d="M 621 180 A 9 9 0 0 1 639 180" fill="none" stroke="#0891b2" stroke-width="1.4"/>
+      <line x1="630" y1="180" x2="637" y2="169" stroke="#6d28d9" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="630" cy="180" r="1.6" fill="#0f172a"/>
     </g>
     <g>
-      <rect x="614" y="215" width="32" height="28" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.4"/>
-      <path d="M 621 235 A 9 9 0 0 1 639 235" fill="none" stroke="#0891b2" stroke-width="1.4"/>
-      <line x1="630" y1="235" x2="637" y2="224" stroke="#6d28d9" stroke-width="1.6" stroke-linecap="round"/>
-      <circle cx="630" cy="235" r="1.6" fill="#0f172a"/>
+      <rect x="614" y="196" width="32" height="28" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.4"/>
+      <path d="M 621 216 A 9 9 0 0 1 639 216" fill="none" stroke="#0891b2" stroke-width="1.4"/>
+      <line x1="630" y1="216" x2="637" y2="205" stroke="#6d28d9" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="630" cy="216" r="1.6" fill="#0f172a"/>
     </g>
     <g>
-      <rect x="614" y="252" width="32" height="28" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.4"/>
-      <path d="M 621 272 A 9 9 0 0 1 639 272" fill="none" stroke="#0891b2" stroke-width="1.4"/>
-      <line x1="630" y1="272" x2="637" y2="261" stroke="#6d28d9" stroke-width="1.6" stroke-linecap="round"/>
-      <circle cx="630" cy="272" r="1.6" fill="#0f172a"/>
+      <rect x="614" y="232" width="32" height="28" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.4"/>
+      <path d="M 621 252 A 9 9 0 0 1 639 252" fill="none" stroke="#0891b2" stroke-width="1.4"/>
+      <line x1="630" y1="252" x2="637" y2="241" stroke="#6d28d9" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="630" cy="252" r="1.6" fill="#0f172a"/>
     </g>
 
-    <!-- Equation strip -->
-    <text x="48" y="322" class="mono" font-size="12" fill="#64748b">|ψ⟩ = cos(θ/2)|0⟩ + e^{iφ}sin(θ/2)|1⟩   ·   ds² = g_ij dθⁱ dθʲ   ·   U(t) = e^{-iHt/ℏ}</text>
+    <!-- Typeset Equation strip (clean Unicode/tspan super-subscripts) -->
+    <text x="48" y="314" class="math" font-size="14.5" fill="#64748b">|ψ⟩ = cos(θ/2)|0⟩ + <tspan font-style="italic">e</tspan><tspan baseline-shift="super" font-size="72%"><tspan font-style="italic">i</tspan>φ</tspan> sin(θ/2)|1⟩   ·   <tspan font-style="italic">ds</tspan><tspan baseline-shift="super" font-size="72%">2</tspan> = <tspan font-style="italic">g</tspan><tspan baseline-shift="sub" font-size="72%">ij</tspan> <tspan font-style="italic">dθ</tspan><tspan baseline-shift="super" font-size="72%">i</tspan> <tspan font-style="italic">dθ</tspan><tspan baseline-shift="super" font-size="72%">j</tspan>   ·   <tspan font-style="italic">U</tspan>(<tspan font-style="italic">t</tspan>) = <tspan font-style="italic">e</tspan><tspan baseline-shift="super" font-size="72%">−<tspan font-style="italic">iHt</tspan>/ℏ</tspan></text>
 
     <!-- Right: 3D Bloch Sphere -->
     <g>
-      <!-- Outer dashed orbital halo -->
-      <circle class="orbit-ring" cx="985" cy="165" r="126" fill="none" stroke="#ddd6fe" stroke-width="1.1" stroke-dasharray="4 7"/>
-
-      <!-- Sphere volume & wireframe -->
-      <circle cx="985" cy="165" r="102" fill="url(#sphereGrad-light)" stroke="#6d28d9" stroke-opacity="0.45" stroke-width="1.4"/>
+      <circle class="orbit-ring" cx="985" cy="162" r="124" fill="none" stroke="#ddd6fe" stroke-width="1.1" stroke-dasharray="4 7"/>
+      <circle cx="985" cy="162" r="100" fill="url(#sphereGrad-light)" stroke="#6d28d9" stroke-opacity="0.45" stroke-width="1.4"/>
 
       <!-- Equatorial plane (back dashed + front solid) -->
-      <path d="M 883 165 A 102 30 0 0 1 1087 165" fill="none" stroke="#0891b2" stroke-opacity="0.28" stroke-width="1.2" stroke-dasharray="4 4"/>
-      <path d="M 883 165 A 102 30 0 0 0 1087 165" fill="none" stroke="#0891b2" stroke-opacity="0.72" stroke-width="1.5"/>
+      <path d="M 885 162 A 100 29 0 0 1 1085 162" fill="none" stroke="#0891b2" stroke-opacity="0.28" stroke-width="1.2" stroke-dasharray="4 4"/>
+      <path d="M 885 162 A 100 29 0 0 0 1085 162" fill="none" stroke="#0891b2" stroke-opacity="0.72" stroke-width="1.5"/>
 
       <!-- Vertical meridian -->
-      <ellipse cx="985" cy="165" rx="34" ry="102" fill="none" stroke="#6d28d9" stroke-opacity="0.26" stroke-width="1.1"/>
+      <ellipse cx="985" cy="162" rx="33" ry="100" fill="none" stroke="#6d28d9" stroke-opacity="0.26" stroke-width="1.1"/>
 
       <!-- Coordinate axes -->
-      <line x1="985" y1="54" x2="985" y2="276" stroke="#64748b" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 3"/>
-      <line x1="876" y1="165" x2="1094" y2="165" stroke="#64748b" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3 3"/>
-      <line x1="924" y1="205" x2="1046" y2="125" stroke="#64748b" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 3"/>
+      <line x1="985" y1="53" x2="985" y2="271" stroke="#64748b" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 3"/>
+      <line x1="878" y1="162" x2="1092" y2="162" stroke="#64748b" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3 3"/>
+      <line x1="925" y1="201" x2="1045" y2="123" stroke="#64748b" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 3"/>
 
       <!-- Pole labels -->
-      <text x="985" y="44" class="mono" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">|0⟩</text>
-      <text x="985" y="293" class="mono" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">|1⟩</text>
-      <text x="1102" y="169" class="mono" font-size="12.5" font-weight="600" fill="#0891b2">|+⟩</text>
-      <text x="868" y="169" class="mono" font-size="12.5" font-weight="600" fill="#64748b" text-anchor="end">|-⟩</text>
-      <text x="1051" y="122" class="mono" font-size="12" font-weight="600" fill="#6d28d9">|i⟩</text>
+      <text x="985" y="43" class="mono" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">|0⟩</text>
+      <text x="985" y="288" class="mono" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">|1⟩</text>
+      <text x="1100" y="166" class="mono" font-size="12.5" font-weight="600" fill="#0891b2">|+⟩</text>
+      <text x="870" y="166" class="mono" font-size="12.5" font-weight="600" fill="#64748b" text-anchor="end">|-⟩</text>
+      <text x="1050" y="120" class="mono" font-size="12" font-weight="600" fill="#6d28d9">|i⟩</text>
 
       <!-- Precessing Quantum State Vector |ψ⟩ -->
       <g class="bloch-vec">
-        <line x1="985" y1="165" x2="1030" y2="92" stroke="url(#accent-light)" stroke-width="3" stroke-linecap="round"/>
-        <circle cx="1030" cy="92" r="10" fill="#0891b2" fill-opacity="0.22"/>
-        <circle cx="1030" cy="92" r="4.8" fill="#0891b2"/>
-        <text x="1044" y="88" class="mono" font-size="13" font-weight="700" fill="#0891b2">|ψ⟩</text>
+        <line x1="985" y1="162" x2="1029" y2="90" stroke="url(#accent-light)" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="1029" cy="90" r="10" fill="#0891b2" fill-opacity="0.22"/>
+        <circle cx="1029" cy="90" r="4.8" fill="#0891b2"/>
+        <text x="1043" y="86" class="mono" font-size="13" font-weight="700" fill="#0891b2">|ψ⟩</text>
       </g>
 
-      <circle cx="985" cy="165" r="3" fill="#0f172a" fill-opacity="0.8"/>
-      <text x="985" y="322" class="mono" font-size="11.5" fill="#64748b" text-anchor="middle">QUBIT STATE · ⟨Z⟩ = cos θ</text>
+      <circle cx="985" cy="162" r="3" fill="#0f172a" fill-opacity="0.8"/>
+      <text x="985" y="314" class="mono" font-size="11.5" fill="#64748b" text-anchor="middle">QUBIT STATE · ⟨Z⟩ = cos θ</text>
     </g>
   </g>
 
-  <!-- Crisp outer frame -->
   <rect x="1" y="1" width="1198" height="338" rx="18" fill="none" stroke="#ddd6fe" stroke-width="1.5"/>
 </svg>
